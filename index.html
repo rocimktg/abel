@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- ============================
+   UNIVERSAL NAVIGATION (SOFT BLUE + OSWALD)
+   Text-only logo > Responsive > Accessible
+  =============================== -->
+  <!-- 1) Load Oswald and Inter from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://kit.fontawesome.com/3177c8ec48.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body><!-- ============================
+     HTML STRUCTURE
+     ----------------------------
+     - nav: wrapper for the navigation bar.
+     - .nav-container: centers content and sets flex layout.
+     - .logo: text-based site logo.
+     - .nav-links: desktop-only link group.
+     - .nav-cta: primary call-to-action button.
+     - .hamburger: mobile menu toggle button.
+     - #mobileMenu: mobile-only link panel.
+=============================== -->
+
+<nav>
+  <div class="nav-container">
+
+    <!-- Text Logo (replace "Rocinante" per client/site) -->
+    <a href="#hero" class="logo">
+      <img src="img/logo.png" alt="" aria-hidden="true" class="logo-mark">
+      <span class="logo-divider" aria-hidden="true">|</span>
+      Abel Isidro
+    </a>
+
+    <!-- Desktop Links -->
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav-cta">Free Quote</a>
+  </div>
+</nav>
+
+<main>
+  <section id="hero" class="hero">
+    <div class="hero__media fade-up delay-1">
+      <picture>
+        <source srcset="img/abel_bw_mobile.jpg" media="(max-width: 767px)">
+        <source srcset="img/abel_bw_left.jpg" media="(min-width: 768px)">
+        <img src="img/abel_bw_left.jpg" alt="Abel Isidro, senior graphic designer">
+      </picture>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content fade-up delay-2 container">
+      <h1>Hi, I'm Abel</h1>
+      <p class="hero__sub">
+        I'm a senior graphic designer focused on clarity, consistency, and brand impact. I help teams communicate more effectively through sharp, strategic visual design across digital and print.
+      </p>
+      <div class="hero__pills" aria-label="Expertise areas">
+        <span class="hero__pill">B2B & B2C</span>
+        <span class="hero__pill">Corporate Design</span>
+        <span class="hero__pill">Sales Enablement</span>
+        <span class="hero__pill">Brand Refreshes</span>
+        <span class="hero__pill">Cross-Channel Campaigns</span>
+        <span class="hero__pill">8+ Years Experience</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about__inner container">
+      <div class="about__grid">
+        <div class="about__content">
+          <p class="about__overline">Abel Isidro</p>
+          <h2 class="about__title">About Me</h2>
+          <span class="about__divider" aria-hidden="true"></span>
+          <div class="about__copy">
+            <p>I've always been drawn to design that feels calm, intentional, and effortless. Working in corporate and marketing environments has shaped my approach into one centered around clarity and structure -- design that helps people understand ideas quickly and confidently.</p>
+            <p>What I enjoy most is creating structure out of ambiguity: building systems, refining messages, and shaping visuals that make information easier to absorb. If something in this portfolio resonates, I'm happy to connect.</p>
+          </div>
+        </div>
+
+        <aside class="about__aside">
+          <div class="about__credential">
+            <p class="about__degree-label">Education</p>
+            <p class="about__degree-desc">Bachelor's of Fine Arts - Visual Communications (2015)</p>
+          </div>
+        <div class="about__actions">
+          <a class="about__btn about__btn--ghost" href="/resume.pdf">
+            <i class="fa-solid fa-file-lines btn-icon" aria-hidden="true"></i>
+            View Resume
+          </a>
+          <a class="about__btn about__btn--ghost" href="mailto:hello@signco.com">
+            <i class="fa-solid fa-envelope btn-icon" aria-hidden="true"></i>
+            Email Me
+          </a>
+          <a class="about__btn about__btn--primary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin-in btn-icon" aria-hidden="true"></i>
+            View LinkedIn
+          </a>
+        </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio__container">
+      <div class="portfolio__header">
+        <p class="portfolio__eyebrow">WORK</p>
+        <h2 class="portfolio__title">Portfolio</h2>
+        <p class="portfolio__subtitle">A selection of branding, marketing, and design work.</p>
+        <span class="portfolio__underline" aria-hidden="true"></span>
+      </div>
+
+      <div class="portfolio__grid">
+        <a class="portfolio-item" href="/work/1000bulbs" aria-label="1000Bulbs case study">
+          <div class="portfolio-item__figure" style="background-image: url('img/1KLB/brand_book.png');">
+            <span class="portfolio-item__border"></span>
+            <div class="portfolio-item__veil"></div>
+            <div class="portfolio-item__meta">
+              <span class="portfolio-item__tag">BRAND &amp; CAMPAIGN DESIGN</span>
+              <span class="portfolio-item__title">1000Bulbs</span>
+              <span class="portfolio-item__cta">View Work &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="portfolio-item" href="/work/ordermygear" aria-label="OrderMyGear case study">
+          <div class="portfolio-item__figure" style="background-image: url('img/OMG/omg.jpg');">
+            <span class="portfolio-item__border"></span>
+            <div class="portfolio-item__veil"></div>
+            <div class="portfolio-item__meta">
+              <span class="portfolio-item__tag">MARKETING COLLATERAL</span>
+              <span class="portfolio-item__title">OrderMyGear</span>
+              <span class="portfolio-item__cta">View Work &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="portfolio-item" href="/work/federal-heath" aria-label="Federal Heath case study">
+          <div class="portfolio-item__figure" style="background-image: url('img/FH/fh.jpg');">
+            <span class="portfolio-item__border"></span>
+            <div class="portfolio-item__veil"></div>
+            <div class="portfolio-item__meta">
+              <span class="portfolio-item__tag">SIGNAGE &amp; SALES SUPPORT</span>
+              <span class="portfolio-item__title">Federal Heath</span>
+              <span class="portfolio-item__cta">View Work &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="portfolio-item" href="/work/presentations" aria-label="PowerPoint Presentations case study">
+          <div class="portfolio-item__figure" style="background-image: url('img/ppt.jpg');">
+            <span class="portfolio-item__border"></span>
+            <div class="portfolio-item__veil"></div>
+            <div class="portfolio-item__meta">
+              <span class="portfolio-item__tag">PRESENTATION DESIGN</span>
+              <span class="portfolio-item__title">PowerPoint Presentations</span>
+              <span class="portfolio-item__cta">View Work &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="portfolio-item" href="/work/rei-fact-sheet" aria-label="REI Product Fact Sheet case study">
+          <div class="portfolio-item__figure" style="background-image: url('img/rei.jpg');">
+            <span class="portfolio-item__border"></span>
+            <div class="portfolio-item__veil"></div>
+            <div class="portfolio-item__meta">
+              <span class="portfolio-item__tag">PRINT COLLATERAL</span>
+              <span class="portfolio-item__title">REI Product Fact Sheet</span>
+              <span class="portfolio-item__cta">View Work &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="portfolio-item" href="/work/meditation-graphic" aria-label="Meditation Graphic case study">
+          <div class="portfolio-item__figure" style="background-image: url('img/meditation.jpg');">
+            <span class="portfolio-item__border"></span>
+            <div class="portfolio-item__veil"></div>
+            <div class="portfolio-item__meta">
+              <span class="portfolio-item__tag">ILLUSTRATION &amp; VISUAL CONCEPT</span>
+              <span class="portfolio-item__title">Meditation Graphic</span>
+              <span class="portfolio-item__cta">View Work &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="portfolio-item" href="/work/social-media" aria-label="Social Media Graphics case study">
+          <div class="portfolio-item__figure" style="background-image: url('img/social.jpg');">
+            <span class="portfolio-item__border"></span>
+            <div class="portfolio-item__veil"></div>
+            <div class="portfolio-item__meta">
+              <span class="portfolio-item__tag">SOCIAL CONTENT</span>
+              <span class="portfolio-item__title">Social Media Graphics</span>
+              <span class="portfolio-item__cta">View Work &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="portfolio-item" href="/work/logos" aria-label="Logos case study">
+          <div class="portfolio-item__figure" style="background-image: url('img/logos.png');">
+            <span class="portfolio-item__border"></span>
+            <div class="portfolio-item__veil"></div>
+            <div class="portfolio-item__meta">
+              <span class="portfolio-item__tag">IDENTITY &amp; LOGO DESIGN</span>
+              <span class="portfolio-item__title">Logos</span>
+              <span class="portfolio-item__cta">View Work &rarr;</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+<section id="experience" class="experience">
+    <div class="experience__panel container">
+      <div class="experience__header-row">
+        <div>
+          <p class="experience__overline">WORK HISTORY</p>
+          <h2 class="experience__title">Professional Experience</h2>
+        </div>
+      </div>
+      <span class="experience__accent" aria-hidden="true"></span>
+
+      <div class="experience__content">
+        <article class="experience__row">
+          <div class="experience__text">
+            <p class="experience__tag">IN-HOUSE CORPORATE DESIGN</p>
+            <p class="experience__company">1000Bulbs &mdash; Senior Graphic Designer</p>
+            <p class="experience__dates">March 2023 &mdash; February 2025</p>
+            <p class="experience__summary">Delivered strategic digital and print campaigns that strengthened brand perception and improved team performance.</p>
+            <ul class="experience__list">
+              <li>Built cohesive digital and print campaigns that increased stakeholder engagement and brand consistency.</li>
+              <li>Championed performance metrics (CSAT, revision rates, turnaround time) to demonstrate design value and drive efficiency.</li>
+              <li>Proposed design solutions aligned with business objectives, including lead generation and marketing impact.</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="experience__divider" aria-hidden="true"></div>
+
+        <article class="experience__row experience__row--reverse">
+          <div class="experience__text">
+            <p class="experience__tag">MARKETING PRODUCTION</p>
+            <p class="experience__company">OrderMyGear &mdash; Marketing Graphic Designer</p>
+            <p class="experience__dates">February 2022 &mdash; November 2022</p>
+            <p class="experience__summary">Supported fast-moving marketing initiatives with consistent, on-brand visuals across digital and print channels.</p>
+            <ul class="experience__list">
+              <li>Advanced brand identity through custom icons, refreshed website visuals, and improved consistency across marketing assets.</li>
+              <li>Partnered with Marketing, Sales, and Product to create email banners, flyers, case studies, trade show graphics, and landing pages.</li>
+              <li>Delivered polished, on-brand assets under quick turnarounds to support campaigns and sales conversations.</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="experience__divider" aria-hidden="true"></div>
+
+        <article class="experience__row">
+          <div class="experience__text">
+            <p class="experience__tag">SIGNAGE & SALES SUPPORT</p>
+            <p class="experience__company">Federal Heath &mdash; Graphic Designer</p>
+            <p class="experience__dates">October 2017 &mdash; February 2020</p>
+            <p class="experience__summary">Elevated sales tools and brand consistency for a national signage company.</p>
+            <ul class="experience__list">
+              <li>Redesigned case studies and sales collateral into effective tools used by sales teams to showcase capabilities.</li>
+              <li>Refined brand identity by improving guidelines for typography, photography, and layout consistency.</li>
+              <li>Played a key role in the company website redesign, improving navigation and client access to services.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+<footer id="contact" class="footer">
+  <div class="footer__container">
+    <div class="footer__intro">
+      <h3 class="footer__heading">Let's collaborate.</h3>
+      <p class="footer__text">Tell me about your project and I'll get back quickly with next steps.</p>
+      <div class="footer__actions about__actions">
+        <a class="about__btn about__btn--ghost" href="/resume.pdf">
+          <i class="fa-solid fa-file-lines btn-icon" aria-hidden="true"></i>
+          View Resume
+        </a>
+        <a class="about__btn about__btn--ghost" href="mailto:hello@signco.com">
+          <i class="fa-solid fa-envelope btn-icon" aria-hidden="true"></i>
+          Email Me
+        </a>
+        <a class="about__btn about__btn--primary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-linkedin-in btn-icon" aria-hidden="true"></i>
+          View LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__card">
+      <form class="footer__form">
+        <div class="footer__form-grid">
+          <label class="footer__label">
+            <span>Name</span>
+            <input class="footer__input" type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label class="footer__label">
+            <span>Email</span>
+            <input class="footer__input" type="email" name="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+        <label class="footer__label">
+          <span>Message</span>
+          <textarea class="footer__textarea" name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+        </label>
+        <button class="footer__submit" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="footer__bottom-inner">
+      <span>&copy; Abel Isidro. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================
+     JAVASCRIPT INTERACTIONS
+     ----------------------------
+     - Adds "scrolled" class to nav when user scrolls
+       down the page, triggering background/shadow changes.
+     - Toggles the mobile menu open/closed when the
+       hamburger button is clicked, and updates ARIA state.
+=============================== -->
+<script>
+const nav = document.querySelector("nav");             // The nav wrapper element
+const hamburger = document.querySelector(".hamburger"); // Mobile toggle button
+const mobileMenu = document.getElementById("mobileMenu"); // Mobile menu panel
+
+// Listen for scroll events to update nav appearance
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    nav.classList.add("scrolled");   // Add scrolled state once user moves down
+  } else {
+    nav.classList.remove("scrolled");// Remove state when near top of page
+  }
+});
+
+// Handle mobile menu toggle
+hamburger.addEventListener("click", () => {
+  const isOpen = mobileMenu.classList.toggle("open"); // Show/hide mobile menu
+  hamburger.classList.toggle("open", isOpen);         // Animate hamburger â†” X
+  hamburger.setAttribute("aria-expanded", isOpen);    // Update ARIA for screen readers
+});
+</script>
+</body>
+</html>
+
+
+
+
